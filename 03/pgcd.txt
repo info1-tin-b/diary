@@ -1,0 +1,1 @@
+Le pgcd de 6 et 3 est 3
