@@ -3,6 +3,12 @@
 - TE1 : 6 novembre à 13h15
 - TE2 : 15 janvier à 13h15
 
+- [ ] printf 
+- [ ] scanf 
+- [ ] Decimal 2 binaire (optimisé et pas optimisé)
+
+
+
 ## Commentaires 
 
 - `//`
