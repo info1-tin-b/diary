@@ -7,8 +7,6 @@
 - [ ] scanf 
 - [ ] Decimal 2 binaire (optimisé et pas optimisé)
 
-
-
 ## Commentaires 
 
 - `//`

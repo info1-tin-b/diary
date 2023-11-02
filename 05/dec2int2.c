@@ -4,9 +4,8 @@
 
 int main(int argc, char * argv[]) {
     int n = 134;
-    for (int i = 31; i >= 0; i--) {
+    for (int i = 31; i >= 0; i--)
         printf("%u", (n & (1 << i)) != 0);
-    }
     printf("\n");
 }
 
