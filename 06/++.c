@@ -7,9 +7,7 @@
 
 int main() {
     int i = 0;
-    i = i - 1;
-    i = i + i;
-    i = i + 1;
+    i = i + i++;
     printf("%d\n", i);
     printf("%d\n", i);
 }

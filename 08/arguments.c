@@ -12,6 +12,7 @@ int main(int argc, char *argv[]) {
     int c = 3;
 
     for (int i = 1; i < argc; i++) {
+        // Do not test return value of sscanf, not needed here.
         sscanf(argv[i], "-a%d", &a);
         sscanf(argv[i], "-b%d", &b);
         sscanf(argv[i], "-c%d", &c);

@@ -13,7 +13,6 @@ int main() {
     int u = 23;
     int v = 42;
     printf("%d\n", add(u, v));
-    prout();
 }
 
 
