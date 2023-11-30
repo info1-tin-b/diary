@@ -10,13 +10,14 @@ int main() {
         putchar('\n');
     }
 
-    int m[10][10];
-    for (int x = 0; x < 10; x++) 
-        for (int y = 0; y < 10; y++) 
+    #define M 10
+    int m[M][M];
+    for (int x = 0; x < M; x++) 
+        for (int y = 0; y < M; y++) 
             m[x][y] = x * y;
 
-    for (int x = 0; x < 10; x++) {
-        for (int y = 0; y < 10; y++) 
+    for (int x = 0; x < M; x++) {
+        for (int y = 0; y < M; y++) 
             printf("%3d ", m[x][y]);
         putchar('\n');
     }

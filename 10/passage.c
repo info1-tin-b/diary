@@ -12,7 +12,7 @@ int saisie(int *n, int *m) {
 
 int main() {
     int u=23, v=42;
-    #if 0
+    #if 1
     if (saisie(&u, &v)) {
         fprintf(stderr, "Erreur de saisie\n");
         return 1;

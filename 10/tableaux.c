@@ -1,12 +1,16 @@
 #include <stdio.h>
-
+#if 0
 int string_length(char *str) {
     int length = 0;
-    while(*str != '\0') {
-        str++; length++;
-    }
+    while(*str != '\0') {str++; length++; }
     return length;
 }
+#else 
+int string_length(char *str) {
+    int length = 0;
+    while (str[length++] != '\0') {}
+}
+#endif 
 
 int main() {
     int t[10] = {2,4,6,8,10,12}; // Les valeurs non initialisées vaudront 0
@@ -27,4 +31,6 @@ int main() {
 
     char d[] = "salut"; // Presque équivalent sauf que le tableau vaut 6 éléments (sentinelle de fin)
     for(int i = 0; i < 5; i++) printf("%c", c[i]); // salut
+
+    printf("Longueur de d: %d\n", string_length(d));
 }
