@@ -9,10 +9,9 @@
   - [x] Passage par valeur
   - [x] Passage par adresse
   - [x] Passage sur le stack ou via registres ?
-  - [ ] Promotion float/double
-  - [ ] Mot clé `register`
+  - [x] Promotion float/double
 - [ ] Tableaux
-  - [ ] Type Tableau
+  - [x] Type Tableau
   - [ ] Tableaux multidimensionnels
 
 ## Préprocesseur 
