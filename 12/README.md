@@ -68,6 +68,112 @@ Un bon hash est un hash qui minimise le nombre de collisions.
     parent f6ee88dd9de7fe
     ```
 
+## Incompréhensions
 
+- [ ] Formattage sur la sortie standard
+- [ ] Fonctions dans des cas spécifiques
+- [ ] Certains opérateurs, plus généralement les priorités
+- [ ] Pointeurs c'est vague
+- [ ] Capturer des arguments
+- [ ] On manque la méthode pour des exercices p.ex.
+  - [ ] Priorité des opérateurs
+- [ ] Comment utiliser "ce foutu" déboggueur ?
+- [ ] Compilateur, pas clair (ça va pa)
+- [ ] Problème de tuyau (|)
+- [ ] Switch pas clair
+- [ ] Boucles algorithmes
+- [ ] 
+## Fiche d'unité
 
-
+- Numération
+    - [x] Bases (système décimal, hexadécimal, octal, binaire)
+    - [x] Conversion de bases
+    - [x] Complément à un
+    - [x] Complément à deux
+    - [!] Arithmétique binaire (et, ou, ou exclusif, négation)
+  - Processus de développement
+    - Outils
+      - [x] Environnement intégré (IDE)
+      - [!] Compilateur (*compiler*)
+      - [x] Chaîne de développement (*toolchain*)
+    - [x] Cycle de développement
+    - [x] Cycle de compilation
+    - [x] Installation d'un environnement de développement
+    - [!] Programmes et processus
+  - Généralités du langage C
+    - [x] Séquences
+    - [!] Embranchements (if, switch)
+    - [x] Boucles (while, do..while, for)
+    - Sauts (break, continue, return, goto)
+      - [~] break
+      - [!] continue
+      - [x] return 
+      - [x] goto
+  - Types de données
+    - [x] Typage
+    - [x] Stockage des données en mémoire
+    - [x] Entiers naturels
+    - [x] Entiers relatifs
+    - [x] Nombres réels (virgule flottante)
+    - [x] Caractères
+      - Table ASCII ('2' == 0x32, '0' == 0x30, 'a' == 97, '\n' == 0xa)
+    - [x] Chaînes de caractères
+    - [x] Booléens
+  - Interaction utilisateur en mode console
+    - [x] Entrée standard (c = getchar(), scanf())
+    - [x] Sortie standard 
+      - [x] puts("abc"), 
+      - [x] printf("abc %d", toto), 
+      - [x] putchar('d'), 
+      - [x] fprintf(stdout, "toto%d", 42)
+    - [x] Sortie d'erreur standard (fprintf(stderr, "foo%d", 42))
+    - [x] Questions/Réponses avec `printf` et `scanf`
+    - Formater un résultat sous forme tabulée et lisible
+    - Menu (choix multiples)
+  - Opérateurs
+    - Opérateurs du langage C
+    - Priorité des opérateurs
+    - Expressions
+    - Promotion et promotion implicite
+  - Conception
+    - Choix des structures de contrôles adaptées à des problèmes
+    - Algorithmes simple (min, max, moyenne, ...)
+      - Manipulation de chaînes
+      - Manipulation de tableaux
+      - Manipulation de bits
+  - Algorithmie
+    - Complexité d'un algorithme
+    - Exemples d'algorithmes
+    - Algorithmes de tri (tri à bulle)
+  - Fonctions
+    - Passage par valeur et par adresse
+    - Utilisation de la valeur de retour
+    - Prototypes de fonctions
+  - Types de données composées
+    - Structures
+    - Unions
+    - Tableaux
+    - Énumérations
+  - Bibliothèques standard
+    - <math.h>
+      - Fonctions trigonométriques
+      - Exponentielle
+      - Logarithme
+    - <string.h>
+      - Comparaison de chaînes de caractères
+      - Concaténation de chaînes de caractères
+      - Copie de chaînes de caractères
+      - Longueur d'une chaîne de caractères
+      - Recherche d'une sous-chaîne dans une chaîne de caractères
+    - <stdio.h>
+      - printf
+      - scanf
+      - putchar
+      - getchar
+      - puts
+      - gets
+  - Structure du code
+    - Corriger les erreurs de syntaxes
+    - Corriger les erreurs sémantiques
+    - Indentation du code
+    - Commentaires
