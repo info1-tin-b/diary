@@ -128,8 +128,8 @@ Un bon hash est un hash qui minimise le nombre de collisions.
       - [x] fprintf(stdout, "toto%d", 42)
     - [x] Sortie d'erreur standard (fprintf(stderr, "foo%d", 42))
     - [x] Questions/Réponses avec `printf` et `scanf`
-    - Formater un résultat sous forme tabulée et lisible
-    - Menu (choix multiples)
+    - [!] Formater un résultat sous forme tabulée et lisible
+    - [x] Menu (choix multiples)
   - Opérateurs
     - Opérateurs du langage C
     - Priorité des opérateurs
@@ -177,3 +177,34 @@ Un bon hash est un hash qui minimise le nombre de collisions.
     - Corriger les erreurs sémantiques
     - Indentation du code
     - Commentaires
+
+## Décalages
+
+```c
+
+unsigned char i = 128; // 0b1000'0000
+i >>= 1;     // 0b0100'0000
+assert(i == 64);
+i >>= 2;
+assert(i == 16);
+i = i << 1;
+assert(i == 32);
+
+unsigned char u = 128;
+u = u << 1;
+assert(u == 0);
+
+unsigned short u = 128;
+u = u << 1;
+assert(u == 256);
+
+int k = 1 << 2;  // 0b00000001 1
+                 // 0b00000100 4
+int j = pow(n, 2);
+    j = 1<<n; // 1000
+```
+
+- Le standard C ne défini pas un décalage par une valeur négative:
+- `1 << -1` comportement incertain
+- Dans le cas d'une valeur signée négative, un décalage à droite rajoute à un à gauche
+- `0b11110000 >> 1` -> `0b11111000` 
