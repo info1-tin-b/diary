@@ -4,8 +4,7 @@
 - [x] Algorithmique au travers de l'algorithme d'Euclie
 - [x] Représentation d'un algorithme sous forme d'un diagramme de flux
 - [x] Implémentation de l'algorithme en C
-
-- [ ] Labo 00 
+- [x] Labo 00 
 
 ## Machine à café
 
