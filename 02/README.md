@@ -7,3 +7,6 @@
 - [x] Un ordinateur aime manipuler une puissance de 2 de bits (p.ex. 64)
 - [x] Le complément à 1 correspond en base 2 d'inverser les bits
 - [x] Les nombres négatifs sont représentés en complément à 2
+
+On peut trouver des explications détaillées dans le support de cours.
+
