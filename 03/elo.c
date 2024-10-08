@@ -2,6 +2,12 @@
 #include <math.h>
 #include <stdlib.h>
 
+
+int compute_new_elo(int a, int b, int k, double w) {
+    double d = 400.;
+    return a + k * (w - 1 / (1 + pow(10, (b - a) / d)));
+}
+
 int main(int argc, char*argv[]) {
     if (argc < 2) {
         printf("Erreur: il manque le k\n");
@@ -29,26 +35,12 @@ int main(int argc, char*argv[]) {
     int elo_loser;
     scanf("%d", &elo_loser);
 
-    // Test
-    printf("ELO gagnant %d, ELO perdant %d, K %d, Match nul %d",
-        elo_winner, elo_loser, k, null_game);
 
-
-    // elo_winner
-    // elo_loser
-    // null_game
-    // k
-
-
-
-
-
-
-
-
-
-
-
+    double w_winner = null_game ? 0.5 : 1.0;
+    double w_loser = null_game ? 0.5 : 0.0;
+    printf("%d\n%d\n", 
+        compute_new_elo(elo_winner, elo_loser, k, w_winner), 
+        compute_new_elo(elo_loser, elo_winner, k, w_loser));
 
     return 0; // Pas d'erreurs
 }
