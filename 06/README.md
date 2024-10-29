@@ -2,7 +2,10 @@
 
 - [x] Macros
 - [ ] Boucles
-
+    - [x] while 
+    - [x] for
+    - [ ] do while
+ 
 ## Macros
 
 Une macro est une directive du préprocesseur qui permet de définir un symbole qui sera remplacé par une expression ou une suite d'instructions.
@@ -31,6 +34,16 @@ While est un mot anglais qui veut dire "tant que". C'est une boucle qui répète
 while (condition) {
     // instructions
 }
+```
+
+### Do While
+
+Le do while est une boucle qui répète un bloc d'instructions tant qu'une condition est vraie. La différence avec le while est que le bloc d'instructions est exécuté au moins une fois.
+
+```c
+do {
+    // instructions
+} while (condition);
 ```
 
 ### Assembleur 
