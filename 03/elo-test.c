@@ -14,9 +14,7 @@ int main() {
 
     double w_winner = null_game ? 0.5 : 1.0;
     double w_loser = null_game ? 0.5 : 0.0;
-
-    int new_elo_winner = compute_new_elo(elo_winner, elo_loser, k, w_winner);
-    int new_elo_loser = compute_new_elo(elo_loser, elo_winner, k, w_loser);
-
-    printf("%d\n%d\n", new_elo_winner, new_elo_loser);
+    printf("%d\n%d\n", 
+        compute_new_elo(elo_winner, elo_loser, k, w_winner), 
+        compute_new_elo(elo_loser, elo_winner, k, w_loser));
 }

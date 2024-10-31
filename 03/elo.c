@@ -2,7 +2,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-
 int compute_new_elo(int a, int b, int k, double w) {
     double d = 400.;
     return a + k * (w - 1 / (1 + pow(10, (b - a) / d)));
@@ -34,7 +33,6 @@ int main(int argc, char*argv[]) {
     printf("Elo du perdant: ");
     int elo_loser;
     scanf("%d", &elo_loser);
-
 
     double w_winner = null_game ? 0.5 : 1.0;
     double w_loser = null_game ? 0.5 : 0.0;

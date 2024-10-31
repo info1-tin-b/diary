@@ -5,5 +5,4 @@ int main(int argc, char* argv[]) {
     if (argc > 1) {
         printf("Le deuxième argument est %s\n", argv[1]);
     }
-    int c = 42 / 0;
 }
