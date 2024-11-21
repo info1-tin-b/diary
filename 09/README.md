@@ -3,9 +3,11 @@
 - [x] Parcours des arguments (ordre multiple)
 - [x] N'oubliez pas vos en-tête de programme (voir exemple)
 - [x] Ajouter si-nécessaire des commentaires de fonction
-- [ ] Jamais de else-if après un return
+- [x] Jamais de else-if après un return
 - [x] Opérateur ternaire
-- [ ] Générateur congruentiel
+- [x] Générateur congruentiel
+- [x] Exercice "Cycle de développement"
+  - Voir les photos sur Teams
 
 ## Opérateur ternaire
 
