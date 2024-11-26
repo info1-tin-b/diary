@@ -59,5 +59,9 @@ int main() {
         } while (changes);
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ae6cf4 (Week 10)
     display(matrix);
 }

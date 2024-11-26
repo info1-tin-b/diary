@@ -5,8 +5,13 @@
 #include <time.h>
 #include <SDL2/SDL.h>
 
+<<<<<<< HEAD
 #define WIDTH (100*4)
 #define CELL_SIZE (2)
+=======
+#define WIDTH (30*4)
+#define CELL_SIZE (5)
+>>>>>>> 5554fe8 (Week 10)
 #define WINDOW_SIZE (WIDTH * CELL_SIZE)
 
 #define AIR_COLOR 0xc79f8500
@@ -78,7 +83,11 @@ bool percolate(SDL_Renderer *renderer, int m[WIDTH][WIDTH], bool animate) {
 
         if (animate) {
             render_matrix(renderer, m);
+<<<<<<< HEAD
             SDL_Delay(10);
+=======
+            SDL_Delay(50);
+>>>>>>> 5554fe8 (Week 10)
         }
     }
 
