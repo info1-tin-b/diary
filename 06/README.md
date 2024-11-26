@@ -5,7 +5,33 @@
     - [x] while 
     - [x] for
     - [ ] do while
- 
+- [ ] Conventions de nommage
+
+## Questions
+
+```c
+printf("#%3");  // Format invalide 
+
+printf("%+4d", -42);  // Affiche " -42"
+
+printf("%5.2f", 3.14159);  // Affiche " 3.14"
+
+```
+
+## Conventions de nommage
+
+- snake_case : ma_super_variable
+- camelCase : maSuperVariable
+- PascalCase : MaSuperVariable
+- kebab-case : ma-super-variable
+- SCREAMING_SNAKE_CASE : MA_SUPER_VARIABLE
+- Hungarian notation : iMaSuperVariable
+- Mixed_Case : Ma_Super_Variable
+
+```c
+int distanceBall_mm
+```
+
 ## Macros
 
 Une macro est une directive du préprocesseur qui permet de définir un symbole qui sera remplacé par une expression ou une suite d'instructions.
