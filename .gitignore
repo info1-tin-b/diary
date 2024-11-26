@@ -1,2 +1,6 @@
 *.out
 *.d
+*.o
+toto
+titi
+tata
