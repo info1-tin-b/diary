@@ -59,6 +59,5 @@ int main() {
         } while (changes);
     }
 
-
     display(matrix);
 }
