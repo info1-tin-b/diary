@@ -1,17 +1,18 @@
 # Semaine 11/16
 
 - [ ] Qualité du code
-  - [ ] PAS DE DECLARATION EN AMONT
-  - [ ] Markdown rappel des règles
-    - [ ] Installer Markdown all in one, espace après titres...
-  - [ ] Chapitre philosophie
-  - [ ] Rapport généré avec Chat GPT, attention les gens !
-- [ ] Lecture sur l'entrée standard
-  - [ ] Lecture Y/n ?
-  - [ ] Pourquoi vider le buffer ?
-- [ ] Prototypes de fonction
-  - [ ] Pourquoi ?
-  - [ ] Comment ?
+  - [x] PAS DE DECLARATION EN AMONT
+  - [x] Markdown rappel des règles
+    - [x] Installer Markdown all in one, espace après titres...
+  - [x] Rapport généré avec Chat GPT, attention les gens !
+  - [x] Chapitre philosophie
+- [x] Lecture sur l'entrée standard
+  - [x] Lecture Y/n ?
+  - [x] Pourquoi vider le buffer ?
+- [x] Prototypes de fonction
+  - [x] Pourquoi ?
+  - [x] Comment ?
+
 - [ ] Tableaux multidimensionnels
   - [ ] Rappels sur les tableaux
   - [ ] Spécificité du type tableau
