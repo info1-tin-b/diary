@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int hist[] = {1,2,4,6,7,5,4,3,2,0,1};
+    int hist[] = {10,20,40,60,70,50,40,30,20,0,10};
 
     for (int i = 0; i < sizeof(hist) / sizeof(hist[0]); ++i) {
         printf("%2d ", i);

@@ -26,14 +26,27 @@ Un tableau d'entiers est donné. On souhaite afficher un histogramme de ces vale
 
 #### 2. Normalisation
 
-Le tableau des données comprend des valeurs entre 0 et 100.
+Le tableau des données comprend des valeurs entre 0 et 1000.
 Impossible de représenter cet histogramme sur le terminal car le nombre de colonnes est limité. 
+
+On peut écrire une fonction: 
+
+```c
+void normalize(int* data, int size, int scale);
+```
 
 On normalise alors les valeurs entre 0 et 10. Comment normaliser ? On cherche la valeur maximum, puis on divise toutes les valeurs par ce maximum multiplié par le facteur d'échelle désiré. Attention aux types (/!\ division entière).
 
 #### 4. Données réelles
 
 On lit les données depuis les fichiers founis dans `data` qui représentent une étude de la dépression chez les étudiants issue de [Kaggle](https://www.kaggle.com/datasets/hopesb/student-depression-dataset).
+
+Ces données ne sont pas la représentation d'un historamme. Il faut donc les convertir. Pour ce faire on doit choisir habitrairement : 
+
+1. Le nombre de classes (*bins*, ou colonnes)
+2. La largeur de votre histogramme sur le terminal. 
+
+La première étape consiste donc en la déclaration du tableau qui va contenir l'histogramme. Puis on remplit ce tableau valeur par valeurs depuis l'entrée standard. 
 
 Vous pouvez facilement `cat` les données dans votre programme:
 
