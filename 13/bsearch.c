@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdint.h>
 /**
  * Recherche dichotomique
  * @param haysack est le tableau d'entrée
@@ -8,7 +8,10 @@
  * @return NULL si non trouvé sinon l'adresse de l'élément  (ex: &haysack[23])
  */
 int *bsearch(int haysack[], int size, int needle) {
-
+    int min = 0;
+    int max = size - 1;
+    int mid = (max - min) / 2 + min;
+    // ...
 }
 
 int main() {
@@ -17,6 +20,6 @@ int main() {
     if (p == 0) {
         printf("Pas trouvé\n");
     } else {
-        printf("Trouvé à l'indice: %ld\n", (int)(a - p) / sizeof(int));
+        printf("Trouvé à l'indice: %ld\n", (uintptr_t)(p - a));
     }
 }
