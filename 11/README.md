@@ -12,15 +12,7 @@
 - [x] Prototypes de fonction
   - [x] Pourquoi ?
   - [x] Comment ?
-
-- [ ] Tableaux multidimensionnels
-  - [ ] Rappels sur les tableaux
-  - [ ] Spécificité du type tableau
-  - [ ] Rappel de l'opérateur sizeof
-  - [ ] Exercice taille (différents types)
-- [ ] Tag et génération version avec Git
-- [ ] Défi internet [CSES](https://cses.fi/problemset/list/)
-- [ ] Enum et structs
+- [x] Défi internet [CSES](https://cses.fi/problemset/list/)
 
 ## Weird Algorithm (CSES)
 

@@ -1,7 +1,12 @@
 #include <stdio.h>
 
-int baz(int a) {
+
+int foo() {
     return 42;
+}
+
+int baz(int a) {
+    return foo();
 }
 
 int bar(int a) {

@@ -1,6 +1,33 @@
 # Semaine 10/16
 
 - [ ] Tableaux multidimensionnels
+- [ ] Conventions d'appel des fonctions
+- [ ] Passage par adresse
+
+## Passage par addresse
+
+- `&` : 
+  - Soit l'opérateur bit à bit `&` (AND), 
+  - Soit l'opérateur d'adresse `&` que l'on prononce "L'adresse de".
+- `*` : 
+  - Soit l'opération multiplication (`a * b`),
+  - Soit l'opérateur de déréférencement `*` que l'on prononce "Contenu de". (ex: `*p = 42`)
+  - Soit le type pointeur (`int *p`)
+
+```c
+int foo(int a, int* d) {
+    a += 2;
+    return 0;
+}
+```
+
+```c
+int main() {
+    int a;
+    int r = scanf("%d", &a);
+}
+```
+
 
 ## Tableaux unidimensionnel
 

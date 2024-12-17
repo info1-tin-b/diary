@@ -5,6 +5,8 @@
 // Prototype
 int nom(int, int, float, double, int*);
 
+// Déclaration en amont
+int nom(int a, int b, float c, double d, int*e);
 
 int main() {
     int a;
