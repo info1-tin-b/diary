@@ -9,4 +9,4 @@ int main() {
     printf("                        %hd °F\n", outsideTemperatureF);
 
     return 0;
-}
+} // salut
