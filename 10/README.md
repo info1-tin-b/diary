@@ -1,5 +1,23 @@
 # Semaine 10/16
 
+- [x] Git
+- [x] Notes sur les chaînes de caractères
+- [x] Instruction ternaire
+- [x] Générateur congruentiel linéaire
+
+## Instruction ternaire
+
+```c
+if (a > b) {
+    max = a;
+} else {
+    max = b;
+}
+
+// Équivalent à :
+max = (a > b) ? a : b;
+```
+
 ## Git 
 
 
