@@ -2,7 +2,14 @@
 
 - [x] Passage par adresse
 - [x] Lecture des arguments avec valeurs par défaut (voir arguments.c)
-- [ ] Suite du labo
+- [x] Suite du labo
+- [ ] Tableaux multidimensionnels
+
+## Exercice
+
+Soit un tableau de 20x20 caractères. Écrire un programme qui dessine un 
+cercle centrée dans le tableau. Le rayon du cercle est une variable.
+Le cercle s'affiche avec des `*` et le reste avec des espaces.
 
 ## Passage par adresse
 
