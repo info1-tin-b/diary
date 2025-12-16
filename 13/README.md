@@ -3,14 +3,50 @@
 - [x] Correction labo test ([Ballistique](ballistic.c))
 - [x] Discussion méthodologie de travail
 - [x] Code Review
-- [ ] Exercices sur les fonctions et les tableaux
+- [x] Exercices sur les fonctions et les tableaux
+- [ ] Rendu du labo mardi de la rentrée en janvier
 - [ ] Labo
+
+## Tableaux
+
+```c
+int t[] = {1,2,3}; // Tableau de 3 éléments (initialisé)
+int t[3];          // Tableau de 3 éléments (pas initialisé)
+int t[3] = {1,2};  // Tableau de 3 éléments (seulement 2 initialisé, les autres à zéro)
+int t[3] = {0}; // Initialise le premier élément à 0 et les autres à zéro
+#define N 32
+
+void foo(int n) {
+    int t[n]; // Pas autorisé (VLA)
+    int t[N]; // OK 
+}
 
 ## Fonctions
 
 En programmation impérative et procédurale, une fonction est un bloc de code réutilisable qui effectue une tâche spécifique. Elle permet de structurer le programme en sous-parties, facilitant la lecture, la maintenance et la réutilisation du code.
 
 ```c
+double delta(double a, double b, double c) {
+    return b*b - 4 * a * c;
+}
+
+bool solve(double a, double b, double c, double *x1, double *x2) {
+    double d = delta(a, b, c);
+    if (d < 0) return false;
+
+    *x1 = (-b + sqrt(d)) / (2 * a)
+    *x2 = (-b - sqrt(d)) / (2 * a)
+    return true;
+}
+
+int main() {
+    double a, b;
+    if (solve(1,2,-3, &a, &b)) {
+        printf("%lf %lf", a, b);
+    }
+}
+
+
 int add(int a, int b) {
     return a + b;
 }
@@ -29,11 +65,34 @@ int main() {
 }
 ```
 
+## Chaînes de caractères
+
+```c
+    char a[] = {65, 66, 67, 0};
+    char b[] = "ABC";
+    
+    for (int i = 0; i < 3; i++) {
+        printf("(%c ", a[i]); // 'A'
+        printf("%hhd) ", a[i]); // 65
+    }
+```
+
 ## Exercice
 
 Soit deux agents secrets James Bond et Yoko Suno qui veulent communiquer 
 de manière sécurisée. Ils n'utilisent pas le chiffrement de César car 
 il est un trop simple, ils préfère utiliser le chiffrement de Vigenère.
+
+Le chiffrement de Vigenère utilise une clé (un mot) pour chiffrer un message. Chaque lettre du message est décalée dans l'alphabet en fonction de la lettre correspondante de la clé.
+
+```c
+// Exemple: vigenere_encrypt("HELLO", "KEY") -> "RIJVS"
+// A décale de 0, Z de 25
+// Z décalé de 1 donne A
+void vigenere_encrypt(char *s, const char *key) {
+  s[3] = s[3] + 2;
+}
+```
 
 ## Promotion des entiers
 

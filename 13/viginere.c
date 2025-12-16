@@ -18,8 +18,16 @@
 // bbbbbbbb abcd --> bcdebcde
 // z        b    --> a
 
-void vigenere_encrypt(char *s, const char *key) {
+void vigenere_encrypt(char *m, const char *k) {
+    const long int message_size = strlen(m);
+    const long int key_size = strlen(k);
 
+    int j = 0;
+    for (int i = 0; i < message_size; i++) {
+        m[i] = 'A' + ((m[i] - 'A') + (k[j] - 'A')) % 26; 
+        j++;
+        j %= key_size;
+    }
 }
 
 int main(int argc, char *argv[]) {
