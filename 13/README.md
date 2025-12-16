@@ -1,6 +1,7 @@
 # Semaine 13/16
 
-- [ ] Correction labo test ([Ballistique](ballistic.c))
+- [x] Correction labo test ([Ballistique](ballistic.c))
+- [ ] Code Review
 - [ ] Discussion méthodologie de travail
 - [ ] Exercices sur les fonctions et les tableaux
 - [ ] Labo
