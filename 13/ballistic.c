@@ -1,15 +1,17 @@
 /**
- * Ballistic trajectory simulation and display in terminal using braille characters.
+ * Ballistic trajectory simulation and display
+ * in terminal using braille characters.
+ *
  * Try with ./a.out 45 32
  */
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
-#define WIDTH  100
+#define WIDTH 100
 #define HEIGHT 20
 
-#define G 9.81  // gravity m/s²
+#define G 9.81   // gravity m/s²
 #define DT 0.01  // time step in seconds
 #define Y0 10.0  // height of the cannon mouth (cell 0,15)
 
@@ -19,10 +21,19 @@
 
 double deg_to_rad(double deg) { return deg * M_PI / 180.0; }
 
+/**
+ * Simulate the ballistic trajectory.
+ * Fills the grid with impact speeds.
+ * Returns the impact speed.
+ * 
+ * @param angle_deg Launch angle in degrees
+ * @param v0 Initial speed in m/s
+ * @param grid 2D array to fill with impact speeds
+ * @return Impact speed in m/s
+ */
 double simulate(double angle_deg, double v0, int grid[HEIGHT][WIDTH]) {
     double vx0 = v0 * cos(deg_to_rad(angle_deg));
     double vy0 = v0 * sin(deg_to_rad(angle_deg));
-    double t = 0.0;
 
     for (double t = 0.0; t <= 100.0; t += DT) {
         double x = vx0 * t;
@@ -52,7 +63,7 @@ void display(int grid[HEIGHT][WIDTH]) {
     }
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
     if (argc != 3) return 0;
     int grid[HEIGHT][WIDTH] = {0};
     double v = simulate(atof(argv[1]), atof(argv[2]), grid);

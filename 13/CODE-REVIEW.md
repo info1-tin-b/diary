@@ -128,7 +128,7 @@ Cohérence de nommage
 
 ```c
 double angle_rad = deg_to_rad(angle_deg);
-double Vyt = simulate(angle_deg,v_in,matrix);
+double Vyt = simulate(angle_deg, v_in, matrix);
 ```
 
 ## Theo Martinez

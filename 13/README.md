@@ -1,10 +1,48 @@
 # Semaine 13/16
 
 - [x] Correction labo test ([Ballistique](ballistic.c))
-- [ ] Code Review
-- [ ] Discussion méthodologie de travail
+- [x] Discussion méthodologie de travail
+- [x] Code Review
 - [ ] Exercices sur les fonctions et les tableaux
 - [ ] Labo
+
+## Fonctions
+
+En programmation impérative et procédurale, une fonction est un bloc de code réutilisable qui effectue une tâche spécifique. Elle permet de structurer le programme en sous-parties, facilitant la lecture, la maintenance et la réutilisation du code.
+
+```c
+int add(int a, int b) {
+    return a + b;
+}
+
+void add2(int a, int b, int *result) {
+    *result = a + b;
+}
+
+int main() {
+    int a = 3;
+    int b = 4; 
+    int sum1 = add(b, a);
+
+    int sum2;
+    add2(a, b, &sum2);
+}
+```
+
+## Exercice
+
+Soit deux agents secrets James Bond et Yoko Suno qui veulent communiquer 
+de manière sécurisée. Ils n'utilisent pas le chiffrement de César car 
+il est un trop simple, ils préfère utiliser le chiffrement de Vigenère.
+
+## Promotion des entiers
+
+```c 
+char u = 42;
+int v = u + 1; // u est promu en int avant l'addition
+```
+
+- Tous les types entiers plus petits que `int` (char, short) sont promus en `int` lors d'opérations arithmétiques.
 
 ## Retours des étudiants
 
@@ -23,14 +61,15 @@ Les remarques des étudiants ont été réécrites de façon concise, et à la p
 - Je ne comprends pas bien les types de données.
 - Je ne suis pas à l'aise avec les maths.
 - Je ne sais pas comment structurer les données.
-- Je ne sais pas comment remplir la grille.
 - J'ai des erreurs de compilation.
 - J'ai des segmentation faults.
-- Je ne comprends pas bien le barème.
+- Je n'ai pas lu le barème.
 - J'ai peur de faire une erreur qui se propage.
 - Je doute constamment de mes réponses.
 - Le stress me bloque.
 - Je dépends trop de ChatGPT.
+- Je ne connais pas les flags de compilation.
+
 
 ## Analyse des difficultés exprimées
 
